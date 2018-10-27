@@ -13,7 +13,7 @@
 #include <avr/sleep.h>
 
 
-const float ADC_MAX			= 0c3FF;	// 10 bit resolution
+const float ADC_MAX			= 0x3FF;	// 10 bit resolution
 const float PWM_RANGE		= 0xFF;		// FF ~ 250hz, 
 
 // Prototypes
@@ -154,7 +154,7 @@ void initADC(void) {
 	
 	
 
-	//ADCSRA &= ~(ADATE | ADSC);
+	//ADCSRA &= ~(ADATE | ADSC); 
 	
 	//ADCSRB |=
 	//		(0 << ADTS2) |
